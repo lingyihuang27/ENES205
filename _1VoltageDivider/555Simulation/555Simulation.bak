@@ -1,0 +1,239 @@
+EESchema Schematic File Version 4
+LIBS:FirstCircuit-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Timer:LM555 U1
+U 1 1 5C2A2EA4
+P 5450 1650
+F 0 "U1" H 5750 2200 50  0000 C CNN
+F 1 "LM555" H 5600 2100 50  0000 C CNN
+F 2 "" H 5450 1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 5450 1650 50  0001 C CNN
+F 4 "X" H 5450 1650 50  0001 C CNN "Spice_Primitive"
+F 5 "555C" H 5450 1650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5450 1650 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "C:\\Users\\scott\\Documents\\GitHub\\ENES205\\_1VoltageDivider\\anl_misc.lib" H 5450 1650 50  0001 C CNN "Spice_Lib_File"
+	1    5450 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5C2A2F75
+P 5450 1050
+F 0 "#PWR?" H 5450 900 50  0001 C CNN
+F 1 "VCC" H 5467 1223 50  0000 C CNN
+F 2 "" H 5450 1050 50  0001 C CNN
+F 3 "" H 5450 1050 50  0001 C CNN
+	1    5450 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 1050 5450 1250
+$Comp
+L power:GND #PWR?
+U 1 1 5C2A3020
+P 5450 2300
+F 0 "#PWR?" H 5450 2050 50  0001 C CNN
+F 1 "GND" H 5455 2127 50  0000 C CNN
+F 2 "" H 5450 2300 50  0001 C CNN
+F 3 "" H 5450 2300 50  0001 C CNN
+	1    5450 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2050 5450 2300
+$Comp
+L Device:R_US R3
+U 1 1 5C2A3071
+P 7300 1600
+F 0 "R3" H 7368 1646 50  0000 L CNN
+F 1 "330" H 7368 1555 50  0000 L CNN
+F 2 "" V 7340 1590 50  0001 C CNN
+F 3 "~" H 7300 1600 50  0001 C CNN
+	1    7300 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5C2A3091
+P 6850 2000
+F 0 "R1" H 6918 2046 50  0000 L CNN
+F 1 "3k" H 6918 1955 50  0000 L CNN
+F 2 "" V 6890 1990 50  0001 C CNN
+F 3 "~" H 6850 2000 50  0001 C CNN
+F 4 "R" H 6850 2000 50  0001 C CNN "Spice_Primitive"
+F 5 "3k" H 6850 2000 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6850 2000 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    6850 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5C2A30C3
+P 6850 2400
+F 0 "R2" H 6918 2446 50  0000 L CNN
+F 1 "50k" H 6918 2355 50  0000 L CNN
+F 2 "" V 6890 2390 50  0001 C CNN
+F 3 "~" H 6850 2400 50  0001 C CNN
+	1    6850 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5C2A314C
+P 6850 1750
+F 0 "#PWR?" H 6850 1600 50  0001 C CNN
+F 1 "VCC" H 6867 1923 50  0000 C CNN
+F 2 "" H 6850 1750 50  0001 C CNN
+F 3 "" H 6850 1750 50  0001 C CNN
+	1    6850 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2150 6850 2200
+Wire Wire Line
+	6850 1750 6850 1850
+Wire Wire Line
+	5950 1450 7300 1450
+$Comp
+L power:GND #PWR?
+U 1 1 5C2A34C7
+P 7300 1750
+F 0 "#PWR?" H 7300 1500 50  0001 C CNN
+F 1 "GND" H 7305 1577 50  0000 C CNN
+F 2 "" H 7300 1750 50  0001 C CNN
+F 3 "" H 7300 1750 50  0001 C CNN
+	1    7300 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C2A34FA
+P 6850 2900
+F 0 "#PWR?" H 6850 2650 50  0001 C CNN
+F 1 "GND" H 6855 2727 50  0000 C CNN
+F 2 "" H 6850 2900 50  0001 C CNN
+F 3 "" H 6850 2900 50  0001 C CNN
+	1    6850 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5C2A3544
+P 6850 2750
+F 0 "C2" H 6965 2796 50  0000 L CNN
+F 1 "1.5n" H 6965 2705 50  0000 L CNN
+F 2 "" H 6888 2600 50  0001 C CNN
+F 3 "~" H 6850 2750 50  0001 C CNN
+	1    6850 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 1450 4600 1450
+Wire Wire Line
+	4600 1450 4600 2600
+Wire Wire Line
+	4600 2600 5950 2600
+Wire Wire Line
+	5950 1850 5950 2600
+Connection ~ 5950 2600
+Wire Wire Line
+	5950 2600 6850 2600
+Wire Wire Line
+	6850 2550 6850 2600
+Connection ~ 6850 2600
+Wire Wire Line
+	5950 1650 6350 1650
+Wire Wire Line
+	6350 1650 6350 2200
+Wire Wire Line
+	6350 2200 6850 2200
+Connection ~ 6850 2200
+Wire Wire Line
+	6850 2200 6850 2250
+$Comp
+L power:VCC #PWR?
+U 1 1 5C2A4271
+P 4950 1850
+F 0 "#PWR?" H 4950 1700 50  0001 C CNN
+F 1 "VCC" H 4968 2023 50  0000 C CNN
+F 2 "" H 4950 1850 50  0001 C CNN
+F 3 "" H 4950 1850 50  0001 C CNN
+	1    4950 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C2A4544
+P 4250 2000
+F 0 "#PWR?" H 4250 1750 50  0001 C CNN
+F 1 "GND" H 4255 1827 50  0000 C CNN
+F 2 "" H 4250 2000 50  0001 C CNN
+F 3 "" H 4250 2000 50  0001 C CNN
+	1    4250 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5C2A4572
+P 4250 1800
+F 0 "C1" H 4365 1846 50  0000 L CNN
+F 1 "10n" H 4365 1755 50  0000 L CNN
+F 2 "" H 4288 1650 50  0001 C CNN
+F 3 "~" H 4250 1800 50  0001 C CNN
+	1    4250 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1650 4950 1650
+Wire Wire Line
+	4250 1950 4250 2000
+$Comp
+L Device:Battery_Cell V1
+U 1 1 5C2A4D10
+P 4150 1000
+F 0 "V1" H 4268 1096 50  0000 L CNN
+F 1 "DC 15" H 4268 1005 50  0000 L CNN
+F 2 "" V 4150 1060 50  0001 C CNN
+F 3 "~" V 4150 1060 50  0001 C CNN
+	1    4150 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C2A4D46
+P 4150 1100
+F 0 "#PWR?" H 4150 850 50  0001 C CNN
+F 1 "GND" H 4155 927 50  0000 C CNN
+F 2 "" H 4150 1100 50  0001 C CNN
+F 3 "" H 4150 1100 50  0001 C CNN
+	1    4150 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5C2A4D5F
+P 4150 800
+F 0 "#PWR?" H 4150 650 50  0001 C CNN
+F 1 "VCC" H 4167 973 50  0000 C CNN
+F 2 "" H 4150 800 50  0001 C CNN
+F 3 "" H 4150 800 50  0001 C CNN
+	1    4150 800 
+	1    0    0    -1  
+$EndComp
+Text Notes 5150 750  0    50   ~ 0
+.tran 1u 10m 0 uic
+$EndSCHEMATC
