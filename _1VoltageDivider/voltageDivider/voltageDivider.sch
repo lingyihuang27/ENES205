@@ -39,8 +39,8 @@ F 1 "R" H 5820 1805 50  0000 L CNN
 F 2 "" V 5680 1850 50  0001 C CNN
 F 3 "~" H 5750 1850 50  0001 C CNN
 F 4 "R" H 5750 1850 50  0001 C CNN "Spice_Primitive"
-F 5 "1k" H 5750 1850 50  0001 C CNN "Spice_Model"
-F 6 "Y" H 5750 1850 50  0001 C CNN "Spice_Netlist_Enabled"
+F 5 "Y" H 5750 1850 50  0001 C CNN "Spice_Netlist_Enabled"
+F 6 "1k" H 5750 1850 50  0001 C CNN "Spice_Model"
 	1    5750 1850
 	1    0    0    -1  
 $EndComp
@@ -60,6 +60,8 @@ F 0 "#GND?" H 5250 2300 50  0001 C CNN
 F 1 "0" H 5250 2487 50  0000 C CNN
 F 2 "" H 5250 2400 50  0001 C CNN
 F 3 "~" H 5250 2400 50  0001 C CNN
+F 4 "I" H 5250 2400 50  0001 C CNN "Spice_Primitive"
+F 5 "Y" H 5250 2400 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    5250 2400
 	1    0    0    -1  
 $EndComp
