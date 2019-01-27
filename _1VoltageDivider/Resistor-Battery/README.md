@@ -137,7 +137,9 @@ Simulation is not the first step in lab workflow. Calculation is. The currents s
 
 ![1548559406240](1548559406240.png)
 
-Why is the current produced by the voltage supply labeled negative? What does the negative mean?
+The simulations are stored in workbooks. Multiple simulations can be stored in one workbook.
+
+![1548561740653](1548561740653.png)
 
 There are 4 simulations in the KiCad simulation folder:
 
