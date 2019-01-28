@@ -84,7 +84,7 @@ Now press the green line to begin wiring. This interface is different too. Click
 
 ![1548547986714](1548547986714.png)
 
-When you wire up the ground, two wires will converge on the same small, red, pad. 
+When you wire up the negative of the supply to the 0 volt reference, (notice not using the language of ground), two wires will converge on the same small, red, pad. 
 
 ![1548548044310](1548548044310.png)
 
@@ -113,7 +113,7 @@ The custom tab should have a copy of the text placed:
 
 ![1548560745006](1548560745006.png)
 
-Look at the Transient Tab. It should be populated. If not populated, you can manually enter the data, but it will not save. You will have to retype after each simulation. The text directive has to be in the schematic. 
+Look at the Transient Tab. It should be populated. If not populated, you can manually enter the data. KiCad will simulate, but not save a simulation workbook. You will have to type in this transient information for each simulation. Most likely there is something wrong (spelling, caps) with the directive above. You will have to retype after each simulation. The text directive has to be in the schematic. 
 
 ![1548556713518](1548556713518.png)
 
