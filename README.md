@@ -10,14 +10,14 @@ ENES-205 is about ANALOG blif (netlist) above. ENES-246 and 247 are about Digita
 
 ## Goal 
 
-The goal of this repository is to give calculation and simulation examples for each lab of the ENES-205 course at Howard Community College.  The complete workflow for the labs is:
+The goal of this repository is to give calculation (in CHx folders) and simulation examples (in Labx folders) to support ENES-205 course at Howard Community College.  The complete workflow for the labs is:
 
-​	design
-​	calculation
-​	simulation
-​	build
-​	test
-​	analyze
+​	**design** (draw a picture of the circuit)
+​	**calculate** (create a jupyter file calculating all currents, voltages and component values if needed)
+​	**simulate** (in KiCad, create electronic version for instructor to inspect and show instructor)
+​	**build** (show instructor physical circuit)
+​	**collect data** (discuss with instructor, create data for instructor to inspect)
+​	**analyze** (Finish the README.md file with links to Lab Calculation, Simulation and Data)
 
 ## Tools
 
