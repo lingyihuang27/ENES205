@@ -19,6 +19,18 @@ The goal of this repository is to give calculation (in CHx folders) and simulati
 ​	**collect data** (discuss with instructor, create data for instructor to inspect)
 ​	**analyze** (Finish the README.md file with links to Lab Calculation, Simulation and Data)
 
+## Folders
+
+**CHx folders**
+
+Contains a jupyter file and its associated screenshots. Has examples from the textbook, supports the lectures and will help you do your homework without a calculator.  Also contains examples of how to do the computations in labs.  
+
+**LABx folders**
+
+Contains a starting point KiCad simulation project and an outline of the LAB write up in a README.md file that can be edited with free software like typora.io or a text editor. 
+
+You will add a jupyter file with the calculations, a data file with data collected from the circuit, a folder with the project simulated in KiCAD in addition to the starting point KiCad simulation, and an edited  README.md file with the lab write up and upload to GitHub. 
+
 ## Tools
 
 ​	[Spice](https://en.wikipedia.org/wiki/SPICE) simulation is done with [NGspice](http://ngspice.sourceforge.net/docs/ngspice-manual.pdf) through [KiCad eeschema](http://ngspice.sourceforge.net/ngspice-eeschema.html). 
