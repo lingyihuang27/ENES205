@@ -1,0 +1,75 @@
+click on KiCad
+
+
+click on part symbol
+move mouse to point where want to place part
+click mouse 
+choose pspice library
+choose 0 for ground  (first in the list of parts)
+click to place ground part
+
+move mouse to point where want to place part
+click on the mouse
+choose pspice library
+choose vsource (last in the list of parts)
+click to place vsource part
+
+move mouse to point where want to place part
+click mouse
+choose pspice library
+choose R for resistor
+click to place resistor part
+
+use mouse scroll wheel to zoom in on part
+
+move mouse over part 
+click m to move
+move mouse to where want part to go
+click to drop the part
+click m to move
+move 0 off to the side 
+click mouse to drop the 0
+
+click on green place wire
+click on circles attached to parts and wire up
+
+right click on vsource
+choose properties
+replace V? with V1
+replace vsource with 12V .. choose different field, don't press enter
+click on edit pspice model
+go to source tab
+put 12 in volts/Amps top box
+click on ok
+
+right click on R
+choose properties
+replace R? with R1
+replace value R with 1k  .. choose different field, don't press enter
+click on the passive tab
+in value box, replace R with 1k
+click on ok
+
+click on the T for text to enter text
+move the cursor near the circuit
+put this in the clip board:
+.trans 100u 10m 0 uic                 
+
+click on tools, then simulator
+click on simulator, then settings
+go to trasient tab check that the following came from the text directive above:
+100u for the time step
+10m for the final time
+click on I(12v) (current through 12 volt source)
+should be -12ma
+click on I(1k) (current through 1k resistor)
+should be + 12ma
+click on V(Net-(12v-Pad1))
+should be 12 volts and over write the green I(1k)
+
+
+
+
+
+
+
